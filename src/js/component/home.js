@@ -9,23 +9,13 @@ export function Home() {
 			<Row>
 				<Col
 					xs={{ span: 7, offset: 5 }}
-					className="bg-dark w-auto h-auto p-2"></Col>
-			</Row>
-			<Row>
-				<Col
-					xs={{ span: 7, offset: 5 }}
-					className="bg-dark w-auto h-auto p-2"></Col>
-			</Row>
-			<Row>
-				<Col
-					xs={{ span: 7, offset: 5 }}
-					className="bg-dark w-auto h-auto p-2"></Col>
+					className="stick bg-dark"></Col>
 			</Row>
 			<Row>
 				<Col xs={5}></Col>
-				<Col xs={2} className="location bg-dark square rounded-4">
+				<Col xs={2} className="location bg-dark square rounded-3">
 					<Row>
-						<Col xs={3}></Col>
+						<Col xs={1}></Col>
 						<Col
 							xs={1}
 							onClick={() => setColor("bg-danger")}
@@ -33,10 +23,9 @@ export function Home() {
 								"light bg-danger " +
 								(color === "bg-danger" ? "glow" : "")
 							}></Col>
-						<Col xs={3}></Col>
 					</Row>
 					<Row>
-						<Col xs={3}></Col>
+						<Col xs={1}></Col>
 						<Col
 							xs={1}
 							onClick={() => setColor("bg-warning")}
@@ -44,10 +33,9 @@ export function Home() {
 								"light bg-warning " +
 								(color === "bg-warning" ? "glow" : "")
 							}></Col>
-						<Col xs={3}></Col>
 					</Row>
 					<Row>
-						<Col xs={3}></Col>
+						<Col xs={1}></Col>
 						<Col
 							xs={1}
 							onClick={() => setColor("bg-success")}
@@ -55,7 +43,6 @@ export function Home() {
 								"light bg-success " +
 								(color === "bg-success" ? "glow" : "")
 							}></Col>
-						<Col xs={3}></Col>
 					</Row>
 				</Col>
 				<Col xs={5}></Col>
